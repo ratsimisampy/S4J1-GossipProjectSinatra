@@ -8,7 +8,7 @@ class Gossip
         @content = content
     end
 
-    def save
+    def save #may need to add an ID ??!
         CSV.open("./db/gossip.csv", "ab") do |csv|
             csv << [@author, @content]
           end
@@ -22,8 +22,8 @@ class Gossip
         return all_gossips
     end
 
-    def find(my_gossip_id)
-        
+    def find(my_gossip_id) # pbm is: how to find out this ID ??
+
     end
 
 end
